@@ -87,6 +87,18 @@ body{
     flex: 1;
 }
 
+#download_cv{
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 100;
+}
+
+#download_cv img{
+    width: 30px;
+    height: auto;
+}
+
 #guia{
     background-color: var(--bg-guia);
     display: flex;
@@ -157,4 +169,16 @@ body{
 .tab-content.active{
     display: block;
     width: 80%;
+}
+
+@media (max-width: 768px) {
+    #content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #sidebar,
+    .tab-content.active {
+        width: 100%;
+    }
 }
