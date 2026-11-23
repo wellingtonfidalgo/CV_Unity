@@ -1,0 +1,148 @@
+/* --- RESET CSS UNIVERSAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* controle */
+    --bg-base: yellow;
+
+    /* fulldoc */
+
+    /* header */
+    --bg-header: #121726;
+    --header-content: #CBD5E1;
+
+    /*Guia*/
+    --bg-guia: #121726;
+    --bg-btn-guia: #1E293B;
+    --bg-btn-guia-a: #0F1422;
+    --border-btn: gray;
+    --border-btn-a: #CBD5E1;
+
+    /* sidebar */
+    --bg-sidebar: #CBD5E1;
+    --sidebar-content: #1E293B;
+
+    /*content*/
+    --bg-content: #0F1422;
+    --content-content: #E6EAF2;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+li{
+    padding: 2px 0;
+}
+
+h3{
+    padding: 20px 0 5px 0;
+}
+
+h4{
+    padding: 15px 0 5px 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-base);
+}
+
+#head{
+    background-color: var(--bg-header);
+    color: var(--header-content);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#perfil-img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#header-info{
+    text-align: center;
+    flex: 1;
+}
+
+#guia{
+    background-color: var(--bg-guia);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.tab-btn{
+    background-color: var(--bg-btn-guia);
+    color: lightgray;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid var(--border-btn);
+    border-radius: 10px;
+}
+
+.tab-btn.active{
+    background-color: var(--bg-btn-guia-a);
+    font-weight: bold;
+    border-left: 2px solid var(--border-btn-a);
+    border-top: 2px solid var(--border-btn-a);
+    border-right: 2px solid var(--border-btn-a);
+    border-bottom: 0px;
+    border-radius: 10px 10px 0 0;
+}
+
+#content{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+#sidebar{
+    padding: 20px 30px;
+    background-color: var(--bg-sidebar);
+    color: var(--sidebar-content);
+    width: 20%;
+}
+
+#sidebar a{
+    padding-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+}
+
+#sidebar a:visited, #sidebar a:active, #sidebar a:link{
+    color: var(--sidebar-content);
+}
+
+#sidebar a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+
+.sidebar-icon{
+    width: 15px;
+}
+
+.tab-content{
+    background-color: var(--bg-content);
+    color: var(--content-content);
+    display: none;
+    padding: 40px;
+    text-align: justify;
+}
+
+.tab-content.active{
+    display: block;
+    width: 80%;
+}
