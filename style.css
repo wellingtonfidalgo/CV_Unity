@@ -47,6 +47,19 @@ h4{
     padding: 15px 0 5px 0;
 }
 
+a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited, a:active, a:link{
+    color: var(--content-content);
+}
+
+a:hover{
+    color: pink;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -116,7 +129,6 @@ body{
 
 #sidebar a{
     padding-left: 5px;
-    cursor: pointer;
     text-decoration: none;
     margin: auto;
 }
